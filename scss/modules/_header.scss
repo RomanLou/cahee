@@ -1,0 +1,80 @@
+.header {
+
+	background: $color-white url(../images/header.jpg) top center no-repeat;
+	background-size: 75%;
+	position: relative;
+    height: 100vh;
+   
+    &__wrapper {
+    	display: flex;
+    	justify-content: space-between;
+    	padding-top: 50px;
+	}
+
+	&__list {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	&__list-item {
+        font: 700 20px $main-font;
+        text-transform: uppercase;
+        margin: 0 20px;
+    }
+    &__list-link {
+    text-decoration: none;
+    color: $color-main;
+    position: relative;
+    	&--active::before, 
+    	&:hover::before {
+    		@include size(100%, 3px);
+        	content: "";
+        	background: $color-orange;
+        	position:absolute;
+        	top: -7px;
+       	}
+	}
+	
+	&__creed {
+    	font: 900 60px $main-font; 
+    	margin: 250px 0 30px;   
+    } 
+
+    &__button {
+        background: $color-orange;
+        margin-bottom: 300px;
+
+        &:hover{
+			background: $color-white;
+			color: $color-orange;
+			border-color: $color-orange;
+        }
+    }
+
+}
+.logo {
+    font: 400 60px/25px Pacifico, cursive;
+
+    &__link {
+        text-decoration: none;
+        color: $color-main;
+            &:hover {
+                color: $color-orange;
+            }
+    } 
+}
+
+.scroll {
+	@include pos($b: 70px, $l: 50%);
+	display: inline-block;
+	line-height: 10px;
+	transition: none;
+
+	&:hover {
+		background: $color-orange;
+		border-radius: 50%;
+	}
+}
