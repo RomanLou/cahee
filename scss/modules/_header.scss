@@ -1,9 +1,9 @@
 .header {
 
-	background: $color-white url(../images/header.jpg) top center no-repeat;
-	background-size: 75%;
-	position: relative;
-    height: 100vh;
+	background: $color-white url(../images/header.jpg) bottom center no-repeat;
+	background-size: contain;
+	position: relative;  
+    height: 100vh;  
    
     &__wrapper {
     	display: flex;
@@ -43,17 +43,6 @@
     	margin: 250px 0 30px;   
     } 
 
-    &__button {
-        background: $color-orange;
-        margin-bottom: 300px;
-
-        &:hover{
-			background: $color-white;
-			color: $color-orange;
-			border-color: $color-orange;
-        }
-    }
-
 }
 .logo {
     font: 400 60px/25px Pacifico, cursive;
@@ -71,10 +60,19 @@
 	@include pos($b: 70px, $l: 50%);
 	display: inline-block;
 	line-height: 10px;
-	transition: none;
+    background: $color-white;
+    border-radius: 50%;
 
 	&:hover {
 		background: $color-orange;
-		border-radius: 50%;
 	}
+}
+.button--header {
+    background: $color-orange;
+
+    &:hover{
+        background: $color-white;
+        color: $color-orange;
+        border-color: $color-orange;
+    }
 }

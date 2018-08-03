@@ -1,0 +1,42 @@
+.gallery {
+	background: $color-yellow;
+	padding: 100px 0 120px;
+	text-align: center;
+
+	&__text {
+		margin: 35px 0 45px;
+	}
+
+	&__img {
+		height: 100%;
+	}
+
+}
+
+.title--black {
+	color: $color-main;
+	text-align: center;
+}
+
+.button--gallery {
+	display: inline-block;
+	background: #5585A2;
+
+	&:hover {
+		color: #5585A2;
+		border-color: #5585A2;
+		background: #fff;
+	};
+}
+
+.img__wrapper,
+.img__wrapper--row {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+.img__wrapper {
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+}
+
